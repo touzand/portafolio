@@ -1,5 +1,3 @@
-
-
 import { createContext, useContext, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -8,11 +6,11 @@ interface TransitionProviderInterface {
 }
 
 interface TransitionContextType {
-  handleTransition: Function;
+  handleTransition: (e: React.MouseEvent<HTMLButtonElement>) => void;
   transitionOut: boolean;
-};
+}
 
-const transitionContext = createContext<TransitionContextType | null>(null);
+const transitionContext = createContext({} as TransitionContextType);
 
 const TransitionProvider = ({ children }: TransitionProviderInterface) => {
   const navigate = useNavigate();
@@ -20,9 +18,9 @@ const TransitionProvider = ({ children }: TransitionProviderInterface) => {
 
   const [transitionOut, setTransitionOut] = useState<boolean>(false);
 
-  const handleTransition: React.MouseEventHandler = (e): void => {
+  const handleTransition = (e:React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    const to = e.currentTarget.getAttribute("href");
+    const to:any = e.currentTarget.getAttribute("href");
 
     if (to === location.pathname) {
       e.preventDefault();

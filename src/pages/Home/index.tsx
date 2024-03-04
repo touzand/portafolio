@@ -4,7 +4,7 @@ import { Intro, Objetive, Wrapper } from "./style";
 
 const Home = () => {
 
-  const {handleTransition,transitionOut} = useHandleTransition()
+  const {transitionOut} = useHandleTransition()
 
   return (
     <Wrapper
