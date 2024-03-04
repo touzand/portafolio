@@ -1,6 +1,6 @@
 Personal portafolio build with react [ [ typescript ](https://react.dev/learn/typescript) ], python [ [flask](https://flask.palletsprojects.com/en/3.0.x/) ] and some others stuff like [framer motion](https://www.framer.com/motion/) and [styled-components](https://styled-components.com/).
 
-### Install
+#### Install
 
 first you have to clone this repo
 
