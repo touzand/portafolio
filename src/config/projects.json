@@ -1,0 +1,61 @@
+{
+  "sonoro": {
+    "title": "Sonoro : Create and customize your own soundscape",
+    "title_min": "Sonoro",
+    "description": "Create and customize your own soundscape to unwind while working or studying.",
+    "year": "2023 - 2024",
+    "tecnologies": ["React", "Python"],
+    "cargo": "Full-Stack Developer",
+    "urls": {
+      "live": "https://sonoro-client.netlify.app/"
+    }
+  },
+  "min note": {
+    "title": "Min note : A quick and easy way to save your ideas",
+    "title_min": "Min note",
+    "description": "A quick and easy way to save your ideas in a simple and minimalist web application.",
+    "year": "2023 - 2024",
+    "tecnologies": ["React"],
+    "cargo": "Front-end Developer",
+    "urls": {
+      "live": "https://minnote-client.netlify.app/"
+    }
+  },
+  "min eyedropper": {
+    "title": "Min eye-dropper : straight forward and user-friendly color picker",
+    "title_min": "Min eye-dropper",
+    "description": "If you ever need to pick color from any website, Min eye-Dropper is here to help.",
+    "year": "2023",
+    "tecnologies": ["React"],
+    "cargo": "Full-Stack Developer",
+    "urls": {
+      "live": "https://touzand.github.io/eye-dropper-client/"
+    }
+  },
+  "upo": {
+    "title": "Upo : movie and series database",
+    "title_min": "Upo",
+    "body": "Upo ( escribir articulo )",
+    "description": "A huge database of information on films and series. where you can discover facts that you didn't know or also see the list of films that are ready to be released",
+    "author": "Alan G. Alonso",
+    "tag": "Personal project",
+    "release_date": "Aug 6",
+    "year": 2022,
+    "urls": {
+      "live": "https://touzand.github.io/upo/"
+    }
+  },
+  "border radius generator": {
+    "title": "Border radius generator :  simple to generate the CSS code for the border-radius property",
+    "title_min": "Border radius generator",
+    "body": "BRG ( escribir articulo )",
+    "description": "You may quickly and simply create the necessary 'border-radius' code with the aid of this tool",
+    "author": "Alan G. Alonso",
+    "tag": "Personal project",
+    "release_date": "Jul 15",
+    "year": 2022,
+    "urls": {
+      "live": "https://touzand.github.io/border-radius-generator/"
+    }
+  }
+}
