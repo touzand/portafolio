@@ -11,7 +11,7 @@ then you can enter the folter and install dependencies;
 
 if your use yarn :
 ```bash
-yarn i or yarn install
+yarn or yarn install
 ```
 
 if you use npm :
