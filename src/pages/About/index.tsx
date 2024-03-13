@@ -11,23 +11,25 @@ const InfoWrapperData: InfoInterface[] = [
     title: "Soft Skills",
     body: "- Energetic & Positive\n- Hard Working Time Management Focus",
   },
-  { title: "Hard Skills",
-    body: "Javascript. Html. Css. React. Python( Flask,FastAPI ). Node( Express )." },
+  {
+    title: "Hard Skills",
+    body: "Javascript. Html. Css. React. Python( Flask,FastAPI ). Node( Express ).",
+  },
   {
     title: "Langagues",
-           body: "- English: Intermediate/advance.\n- Portuguese: Fluid.\n- Spanish: Native",
+    body: "- English: Intermediate/advance.\n- Portuguese: Fluid.\n- Spanish: Native",
   },
   {
     title: "Education",
     body: "Curently studying IT\n(information systems career)",
   },
-  { 
+  {
     title: "Experience",
-           body: "- Morpheus:\n( Developer )" 
+    body: "- Morpheus:\n( Developer )",
   },
-  { 
+  {
     title: "Interest",
-    body: "Photography. Filmaking. Phylosofy. Astronomi."
+    body: "Photography. Filmaking. Phylosofy. Astronomi.",
   },
 ];
 
@@ -46,10 +48,12 @@ const About = () => {
       <h3>About (me)</h3>
 
       <div>
-        {InfoWrapperData.map((info,key) => (
-          <InfoWrapper key={key}>
+        {InfoWrapperData.map((info, index) => (
+          <InfoWrapper key={index}>
             <h6>{info.title}</h6>
-            {info.body.split("\n").map(linea=><p>{linea}</p>)}
+            {info.body.split("\n").map((linea) => (
+              <p>{linea}</p>
+            ))}
           </InfoWrapper>
         ))}
       </div>

@@ -1,5 +1,5 @@
-import styled, {css} from 'styled-components';
-import {motion} from 'framer-motion'
+import styled, { css } from "styled-components";
+import { motion } from "framer-motion";
 
 export const Wrapper = styled(motion.main)`
   max-width: 700px;
@@ -20,17 +20,18 @@ export const ContactForm = styled.form`
     padding: 0;
   }
 
-  input[type='text'], input[type='email'] {
+  input[type="text"],
+  input[type="email"] {
     border: none;
     background-color: transparent;
     border-bottom: solid thin var(--grey-second-color);
     //color: var(--grey-second-color);
     //width:400px;
-    height: ;
+    height:;
     font-weight: bold;
     font-size: var(--step-2);
     margin-bottom: -5px;
-      opacity: 0.5;
+    opacity: 0.5;
 
     &::placeholder {
       font-weight: bold;
@@ -56,7 +57,6 @@ export const ContactForm = styled.form`
       color: var(--black-third-color);
       border-color: var(--black-third-color);
       //color: var(--white-primal-color);
-      
     }
   }
 
@@ -72,12 +72,12 @@ export const StatusSendMessage = styled.span`
   font-weight: bold;
   margin-top: 5vh;
   padding: 0.5rem;
-    border: dashed medium var(--black-third-color);
-  ${props =>
+  border: dashed medium var(--black-third-color);
+  ${(props) =>
     props.$success &&
     css`
       background-color: green;
       color: var(--white-primal-color);
-    border:none;
+      border: none;
     `};
 `;

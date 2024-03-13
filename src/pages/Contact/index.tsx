@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ContactForm, StatusSendMessage, Wrapper } from "./style";
 import { handleChange, handleSubmit } from "../../utils/formUtils";
-import {useHandleTransition} from "../../context/transitionContext";
+import { useHandleTransition } from "../../context/transitionContext";
 
 interface FormStateInterface {
   name: string;
@@ -13,7 +13,7 @@ const Contact = () => {
   const [buttonVisible, setButtonVisible] = useState<boolean>(true);
   const [statusMessage, setStatusMessage] = useState<string>("Loading...");
 
-  const {transitionOut} = useHandleTransition()
+  const { transitionOut } = useHandleTransition();
 
   const [formData, setFormData] = useState<FormStateInterface>({
     name: "",

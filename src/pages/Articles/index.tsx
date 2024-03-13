@@ -17,35 +17,12 @@ const Articles = () => {
   const { transitionOut, handleTransition } = useHandleTransition();
   const [data, setData] = useState<ArticleInterface[][]>();
 
-  //const convertDate = (fechaStr: string) => {
-    //const parts = fechaStr.split(" ");
-    //const meses: MesesInterface = {
-      //Jan: 0,
-      //Feb: 1,
-      //Mar: 2,
-      //Apr: 3,
-      //May: 4,
-      //Jun: 5,
-      //Jul: 6,
-      //Aug: 7,
-      //Sep: 8,
-      //Oct: 9,
-      //Nov: 10,
-      //Dec: 11,
-    //};
-
-    //return new Date(
-      //new Date().getFullYear(),
-      //meses[parts[0]],
-      //parseInt(parts[1])
-    //);
-  //};
-
   useEffect(() => {
     const articlesByYear: ArticleInterface[][] = [];
 
     axios.get(import.meta.env.VITE_ARTICLES).then((response) => {
       const db = response.data;
+      //console.log(db)
 
       db.forEach((article: ArticleInterface) => {
         const year = article.year;
