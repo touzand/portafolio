@@ -2,7 +2,7 @@ import axios from "axios";
 
 interface HandleChangeInterface {
   (
-    e: React.MouseEvent,
+    e: React.ChangeEvent<HTMLInputElement>,
     formData: { name: string; subject: string; email: string },
     setFormData: Function
   ): void;
@@ -36,14 +36,20 @@ export const handleSubmit: HandleSubmitInterface = async (
   e.preventDefault();
   setButtonVisible(false);
 
-  const params = new URLSearchParams();
+  const params: URLSearchParams = new URLSearchParams();
+
+  //for (const key in formData) {
+    //params.append(key, formData[key]);
+  //}
+
   for (const key in formData) {
-    params.append(key, formData[key]);
+    if (Object.prototype.hasOwnProperty.call(formData, key)) {
+      params.append(key, formData[key as keyof typeof formData]);
+    }
   }
 
   try {
     await axios.post(import.meta.env.VITE_SEND_EMAIL_URL, params.toString());
-    //console.log("Email have been send");
 
     setStatusMessage("Email send succesfully");
 

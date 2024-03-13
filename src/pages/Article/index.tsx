@@ -29,7 +29,7 @@ const Article = () => {
 
   useEffectOnce(() => {
     hljs.highlightAll();
-  }, [data]);
+  });
 
   useEffect(() => {
     axios.get(import.meta.env.VITE_ARTICLES).then((response) => {

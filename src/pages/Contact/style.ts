@@ -25,8 +25,6 @@ export const ContactForm = styled.form`
     border: none;
     background-color: transparent;
     border-bottom: solid thin var(--grey-second-color);
-    //color: var(--grey-second-color);
-    //width:400px;
     height:;
     font-weight: bold;
     font-size: var(--step-2);
@@ -56,7 +54,6 @@ export const ContactForm = styled.form`
     &:hover {
       color: var(--black-third-color);
       border-color: var(--black-third-color);
-      //color: var(--white-primal-color);
     }
   }
 
@@ -67,7 +64,7 @@ export const ContactForm = styled.form`
   }
 `;
 
-export const StatusSendMessage = styled.span`
+export const StatusSendMessage = styled.span<{$success?:boolean}>`
   font-size: var(--step-2);
   font-weight: bold;
   margin-top: 5vh;

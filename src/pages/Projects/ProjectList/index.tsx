@@ -1,5 +1,4 @@
 import { Wrapper } from "./style";
-import db from "../../../config/db.json";
 import { Link } from "react-router-dom";
 import { useEffectOnce } from "../../../hooks/useEffectOnce";
 import { useState } from "react";
@@ -54,7 +53,7 @@ const ProjectList = () => {
             </div>
           </figure>
           <Link
-            onClick={(e) => handleTransition(e)}
+          onClick={(e)=>handleTransition(e)}
             to={"/article/" + project.title}
           >
             Read more

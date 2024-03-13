@@ -6,7 +6,7 @@ interface TransitionProviderInterface {
 }
 
 interface TransitionContextType {
-  handleTransition: (e: React.MouseEvent<HTMLButtonElement>) => void;
+ handleTransition:(e:React.MouseEvent<HTMLAnchorElement, MouseEvent>)=>void;
   transitionOut: boolean;
 }
 
@@ -18,7 +18,7 @@ const TransitionProvider = ({ children }: TransitionProviderInterface) => {
 
   const [transitionOut, setTransitionOut] = useState<boolean>(false);
 
-  const handleTransition = (e:React.MouseEvent<HTMLButtonElement>) => {
+  const handleTransition = (e:React.MouseEvent<HTMLAnchorElement,MouseEvent>) => {
     e.preventDefault();
     const to:any = e.currentTarget.getAttribute("href");
 

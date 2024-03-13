@@ -40,7 +40,7 @@ const RecentProjects = () => {
             <Card key={index}>
               <div>
                 <Link
-                  onClick={(e) => handleTransition(e)}
+                onClick={(e)=>handleTransition(e)}
                   to={"/article/" + project.title}
                 >
                   {project.title_min}

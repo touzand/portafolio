@@ -12,7 +12,7 @@ const Header = () => {
     <Wrapper>
       <Me>
         <figure>
-          <Link to={urls.home_page} onClick={(e) => handleTransition(e)}>
+          <Link to={urls.home_page} onClick={(e)=>handleTransition(e)}>
             <img src={urls.profile_picture_grey} />
           </Link>
         </figure>
@@ -27,7 +27,7 @@ const Header = () => {
         <ul>
           {pagesArray.map(([key, value]) => (
             <li key={key}>
-              <NavLink to={value} onClick={(e) => handleTransition(e)}>
+              <NavLink to={value} onClick={(e)=>handleTransition(e)}>
                 <span>{key}</span>
               </NavLink>
             </li>

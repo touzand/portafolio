@@ -61,7 +61,7 @@ const Articles = () => {
                 <li key={index}>
                   <Link
                     to={"/article/" + article.title}
-                    onClick={(e) => handleTransition(e)}
+                  onClick={(e)=>handleTransition(e)}
                   >
                     {article.title}
                   </Link>{" "}
@@ -76,7 +76,7 @@ const Articles = () => {
                 <li key={index}>
                   <Link
                     to={"/article/" + article.title}
-                    onClick={(e) => handleTransition(e)}
+                    onClick={handleTransition}
                   >
                     {article.title}
                   </Link>{" "}
@@ -91,7 +91,7 @@ const Articles = () => {
                 <li key={index}>
                   <Link
                     to={"/article/" + article.title}
-                    onClick={(e) => handleTransition(e)}
+                    onClick={handleTransition}
                   >
                     {article.title}
                   </Link>{" "}
