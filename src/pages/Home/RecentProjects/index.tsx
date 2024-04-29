@@ -32,7 +32,7 @@ const RecentProjects = () => {
   }, []);
 
   return (
- <Wrapper $haveData={data ? true : false}>
+    <Wrapper $haveData={data ? true : false}>
       <h4>Recent Projects</h4>
       <div>
         {data &&
