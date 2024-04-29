@@ -3,8 +3,7 @@ import RecentProjects from "./RecentProjects";
 import { Intro, Objetive, Wrapper } from "./style";
 
 const Home = () => {
-
-  const {transitionOut} = useHandleTransition()
+  const { transitionOut } = useHandleTransition();
 
   return (
     <Wrapper
@@ -14,7 +13,6 @@ const Home = () => {
         opacity: transitionOut ? 0 : 1,
       }}
       transition={{ duration: 0.1, delay: 0 }}
-
     >
       <Intro>
         <h1>👋 My name is Alan.</h1>

@@ -53,7 +53,7 @@ const ProjectList = () => {
             </div>
           </figure>
           <Link
-          onClick={(e)=>handleTransition(e)}
+            onClick={(e) => handleTransition(e)}
             to={"/article/" + project.title}
           >
             Read more
