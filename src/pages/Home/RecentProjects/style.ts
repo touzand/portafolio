@@ -1,12 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Wrapper = styled.article`
+export const Wrapper = styled.article<{ $haveData: boolean }>`
   display: flex;
   flex-direction: column;
+  transition: all 0.5s ease;
+  opacity: ${(props) => (props.$haveData ? "1" : "0")};
 
-h4{
-  margin-top:0;
-}
+  h4 {
+    margin-top: 0;
+  }
 `;
 
 export const Card = styled.figure`
@@ -22,7 +24,7 @@ export const Card = styled.figure`
     a {
       font-weight: bold;
       font-size: var(--step-0);
-      text-decoration:underline;
+      text-decoration: underline;
     }
   }
 

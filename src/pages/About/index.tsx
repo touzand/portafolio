@@ -13,11 +13,11 @@ const InfoWrapperData: InfoInterface[] = [
   },
   {
     title: "Hard Skills",
-    body: "Javascript. Html. Css. React. Python( Flask,FastAPI ). Node( Express ).",
+    body: "Javascript. Html. Css. React. Python ( Flask,FastAPI ). Node ( Express ). Typescript",
   },
   {
     title: "Langagues",
-    body: "- English: Intermediate/advance.\n- Portuguese: Fluid.\n- Spanish: Native",
+    body: "- English: Intermediate.\n- Portuguese: Fluid.\n- Spanish: Native",
   },
   {
     title: "Education",
@@ -51,8 +51,8 @@ const About = () => {
         {InfoWrapperData.map((info, index) => (
           <InfoWrapper key={index}>
             <h6>{info.title}</h6>
-            {info.body.split("\n").map((linea) => (
-              <p>{linea}</p>
+            {info.body.split("\n").map((linea, index) => (
+              <p key={index}>{linea}</p>
             ))}
           </InfoWrapper>
         ))}

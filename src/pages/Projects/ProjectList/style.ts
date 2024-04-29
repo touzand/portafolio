@@ -1,11 +1,13 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const Wrapper = styled.figure`
+export const Wrapper = styled.figure<{ $haveData: boolean }>`
 max-width:700px;
 margin:auto;
 display:grid;
   gap:.5rem;
 margin-bottom:5vh;
+  transition:all .5s ease;
+  opacity:${(props) => (props.$haveData ? "1" : "0")};
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -77,4 +79,4 @@ a{
     //display:inline;
   //}
 }
-`
+`;

@@ -39,7 +39,7 @@ const ProjectList = () => {
   });
 
   return (
-    <Wrapper>
+    <Wrapper $haveData={data.length > 0 ? true : false}>
       {data.map((project, index) => (
         <article key={index}>
           <figure>
