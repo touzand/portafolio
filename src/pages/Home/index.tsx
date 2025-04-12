@@ -3,6 +3,7 @@ import RecentProjects from "./RecentProjects";
 import { Intro, Objetive, Wrapper } from "./style";
 
 const Home = () => {
+
   const { transitionOut } = useHandleTransition();
 
   return (
@@ -16,7 +17,7 @@ const Home = () => {
     >
       <Intro>
         <h1>👋 My name is Alan.</h1>
-        <h1>I´m a Full-stack & Indie developer based in Brazil.</h1>
+        <h1>I´m a full-stack developer based in Brazil.</h1>
       </Intro>
 
       <div>

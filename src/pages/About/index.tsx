@@ -3,33 +3,40 @@ import { InfoWrapper, Wrapper } from "./style";
 
 interface InfoInterface {
   title: string;
-  body: string;
+  body: string[];
 }
 
 const InfoWrapperData: InfoInterface[] = [
   {
     title: "Soft Skills",
-    body: "- Energetic & Positive\n- Hard Working Time Management Focus",
+    body: ["Energetic & Positive", "Hard Working Time Management Focus"],
   },
   {
     title: "Hard Skills",
-    body: "Javascript. Html. Css. React. Python ( Flask,FastAPI ). Node ( Express ). Typescript",
+    body: [
+      "Javascript, Html, Css",
+      "Typescript",
+      "React (Jest)",
+      "Node (Express, Nest)",
+      "Python (Flask,FastAPI)",
+      "Java (Spring Boot)",
+    ],
   },
   {
     title: "Langagues",
-    body: "- English: Intermediate.\n- Portuguese: Fluid.\n- Spanish: Native",
+    body: ["English: Intermediate.", "Portuguese: Fluid.", "Spanish: Native"],
   },
   {
     title: "Education",
-    body: "Curently studying IT\n(information systems career)",
+    body: ["Curently studying IT (information systems career)"],
   },
   {
     title: "Experience",
-    body: "- Morpheus:\n( Developer )",
+    body: ["Empresta.me : Developer", "Morpheus : Developer"],
   },
   {
     title: "Interest",
-    body: "Photography. Filmaking. Phylosofy. Astronomi.",
+    body: ["Photography", "Phylosofy", "Astronomi"],
   },
 ];
 
@@ -51,9 +58,11 @@ const About = () => {
         {InfoWrapperData.map((info, index) => (
           <InfoWrapper key={index}>
             <h6>{info.title}</h6>
-            {info.body.split("\n").map((linea, index) => (
-              <p key={index}>{linea}</p>
-            ))}
+            <ul>
+              {info.body.map((linea, index) => (
+                <li key={index}>{linea}</li>
+              ))}
+            </ul>
           </InfoWrapper>
         ))}
       </div>

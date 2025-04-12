@@ -61,3 +61,11 @@ export const Navbar = styled.nav`
     color: var(--black-third-color);
   }
 `;
+
+export const LinkForNavbar = styled.li`
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;

@@ -11,8 +11,8 @@ export const Wrapper = styled(motion.main)`
     gap: 2rem;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    max-width: 700px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 950px;
     margin:5vh auto;
   }
 `;

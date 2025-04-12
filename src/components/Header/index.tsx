@@ -1,4 +1,4 @@
-import { Me, Navbar, Wrapper } from "./style.ts";
+import { LinkForNavbar, Me, Navbar, Wrapper } from "./style.ts";
 import { NavLink, Link } from "react-router-dom";
 import urls from "../../config/urls.json";
 import { useHandleTransition } from "../../context/transitionContext.tsx";
@@ -12,7 +12,7 @@ const Header = () => {
     <Wrapper>
       <Me>
         <figure>
-          <Link to={urls.home_page} onClick={(e)=>handleTransition(e)}>
+          <Link to={urls.home_page} onClick={(e) => handleTransition(e)}>
             <img src={urls.profile_picture_grey} />
           </Link>
         </figure>
@@ -20,17 +20,17 @@ const Header = () => {
           <a href={urls.github_touzand} target="_blank">
             Alan G. Alonso
           </a>
-          <div>Indie developer</div>
+          <div>Developer</div>
         </div>
       </Me>
       <Navbar>
         <ul>
           {pagesArray.map(([key, value]) => (
-            <li key={key}>
-              <NavLink to={value} onClick={(e)=>handleTransition(e)}>
+            <LinkForNavbar key={key}>
+              <NavLink to={value} onClick={(e) => handleTransition(e)}>
                 <span>{key}</span>
               </NavLink>
-            </li>
+            </LinkForNavbar>
           ))}
         </ul>
       </Navbar>

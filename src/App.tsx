@@ -2,12 +2,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { TransitionProvider } from "./context/transitionContext";
 
 import Header from "./components/Header";
-import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Articles from "./pages/Articles";
 import Article from "./pages/Article";
+import Home from "./pages/Home";
 
 const App = () => {
   return (

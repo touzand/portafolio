@@ -54,6 +54,21 @@ const Articles = () => {
             Here is the complete list of articles I have written in recent
             years.
           </p>
+          <h5>2025</h5>
+          <ul>
+            {data &&
+              data[2025].map((article, index) => (
+                <li key={index}>
+                  <Link
+                    to={"/article/" + article.title}
+                  onClick={(e)=>handleTransition(e)}
+                  >
+                    {article.title}
+                  </Link>{" "}
+                  - {article.release_date}
+                </li>
+              ))}
+          </ul>
           <h5>2024</h5>
           <ul>
             {data &&

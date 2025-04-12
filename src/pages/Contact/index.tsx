@@ -53,7 +53,7 @@ const Contact = () => {
           <input
             type="text"
             name="subject"
-            placeholder="Web site, Full time job, etc"
+            placeholder="Web site, Full time job .."
             autoComplete="random-string"
             value={formData.subject}
             required
@@ -61,7 +61,7 @@ const Contact = () => {
           />
         </div>
         <div>
-          <h4>that need help. you can reach me at</h4>
+          <h4>that need help. you can reach me at :</h4>
           <input
             type="email"
             name="email"
@@ -71,8 +71,7 @@ const Contact = () => {
             required
             onChange={handleFormChange}
           />
-          <h4>to get things</h4>
-          <h4>started.</h4>
+          <h4>to get things started.</h4>
         </div>
 
         {buttonVisible ? (

@@ -18,7 +18,7 @@ const Projects = () => {
       <div>
         <p>
           In my professional career, I constantly dedicate myself to the{" "}
-          <b>study</b>
+          <b>study</b>{" "}
           and <b>development of personal projects</b>.
         </p>
         <p>

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 export const Wrapper = styled(motion.main)`
   max-width: 700px;
   margin: 10vh auto;
-  border-radius: 1rem;
 `;
 
 export const ContactForm = styled.form`
@@ -24,16 +23,17 @@ export const ContactForm = styled.form`
   input[type="email"] {
     border: none;
     background-color: transparent;
-    border-bottom: solid thin var(--grey-second-color);
+    border-bottom: solid thin #00000050;
     height:;
     font-weight: bold;
     font-size: var(--step-2);
     margin-bottom: -5px;
-    opacity: 0.5;
+color:black;
 
     &::placeholder {
       font-weight: bold;
       font-size: var(--step-2);
+color:#00000030;
     }
 
     &:focus {
@@ -55,12 +55,18 @@ export const ContactForm = styled.form`
       color: var(--black-third-color);
       border-color: var(--black-third-color);
     }
+    
+@media (max-width:600px){
+width:100%;
+      color: var(--black-third-color);
+      border-color: var(--black-third-color);
+}
   }
 
   div {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: .5rem;
   }
 `;
 

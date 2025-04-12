@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import {motion} from 'framer-motion'
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Wrapper = styled(motion.main)`
 max-width:900px;
@@ -21,6 +21,7 @@ export const Intro = styled.article`
   flex-direction: column;
   gap: 0.5rem;
   margin: 10vh 0;
+  position: relative;
 
   span {
     font-size: var(--step-2);
@@ -32,6 +33,7 @@ export const Intro = styled.article`
     font-size: var(--step-3);
     margin: 0;
     line-height: 1.2;
+    position: relative;
   }
 `;
 
