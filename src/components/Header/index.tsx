@@ -13,7 +13,10 @@ const Header = () => {
       <Me>
         <figure>
           <Link to={urls.home_page} onClick={(e) => handleTransition(e)}>
-            <img src={urls.profile_picture_grey} />
+            <img
+              src={urls.profile_picture_color}
+              style={{ filter: "grayscale(100%)" }}
+            />
           </Link>
         </figure>
         <div>
